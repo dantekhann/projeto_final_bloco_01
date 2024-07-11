@@ -22,7 +22,7 @@ export function main() {
 
     while (true) {
         
-        console.log(colors.bg.black, colors.fg.green,
+        console.log(colors.bg.black, colors.fg.bluestrong,
             "*****************************************************");
         console.log("                                                     ");
         console.log("                Loja de Esportes                  ");
