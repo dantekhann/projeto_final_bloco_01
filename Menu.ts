@@ -6,7 +6,7 @@ import { Chuteira } from "./src/model/Chuteira";
 
 export function main() {
   let opcao, id, tipo, preco: number;
-  let nome, generico, fragancia: string;
+  let nome, futebol, chuteira: string;
   let tipoProduto = ["Bola", "Chuteira"];
 
   // Objeto da Classe ProdutoController
@@ -70,20 +70,20 @@ export function main() {
 
         switch (tipo) {
           case 1:
-            generico = readlinesync.question("Digite a Marca da Bola: ");
+            futebol = readlinesync.question("Digite a Marca da Bola: ");
             produtoController.cadastrar(
-              new Bola(produtoController.gerarId(), nome, tipo, preco, generico)
+              new Bola(produtoController.gerarId(), nome, tipo, preco, futebol)
             );
             break;
           case 2:
-            fragancia = readlinesync.question("Digite a Marca do Chuteira: ");
+            chuteira = readlinesync.question("Digite a Marca do Chuteira: ");
             produtoController.cadastrar(
               new Chuteira(
                 produtoController.gerarId(),
                 nome,
                 tipo,
                 preco,
-                fragancia
+                chuteira
               )
             );
             break;
@@ -134,15 +134,15 @@ export function main() {
 
           switch (tipo) {
             case 1:
-              generico = readlinesync.question("Digite a Marca da Bola: ");
+              futebol = readlinesync.question("Digite a Marca da Bola: ");
               produtoController.atualizar(
-                new Bola(id, nome, tipo, preco, generico)
+                new Bola(id, nome, tipo, preco, futebol)
               );
               break;
             case 2:
-              fragancia = readlinesync.question("Digite a Marca da Chuteira: ");
+              chuteira = readlinesync.question("Digite a Marca da Chuteira: ");
               produtoController.atualizar(
-                new Chuteira(id, nome, tipo, preco, fragancia)
+                new Chuteira(id, nome, tipo, preco, chuteira)
               );
               break;
           }
