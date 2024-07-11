@@ -14,11 +14,11 @@ export class Bola extends Produto {
     this._futebol = futebol;
   }
 
-  public get fragancia(): string {
+  public get futebol(): string {
     return this._futebol;
   }
 
-  public set fragancia(value: string) {
+  public set futebol(value: string) {
     this._futebol = value;
   }
 

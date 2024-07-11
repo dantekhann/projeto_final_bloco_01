@@ -27,7 +27,7 @@ export function main() {
       "*****************************************************"
     );
     console.log("                                                     ");
-    console.log("                Loja de Esportes                  ");
+    console.log("                Loja de Esportes                     ");
     console.log("                                                     ");
     console.log("*****************************************************");
     console.log("                                                     ");
@@ -66,7 +66,7 @@ export function main() {
 
         tipo = readlinesync.keyInSelect(tipoProduto, "", { cancel: false }) + 1;
 
-        preco = readlinesync.questionFloat("Digite o preco: ");
+        preco = readlinesync.questionFloat("Digite o preco R$: ");
 
         switch (tipo) {
           case 1:
@@ -130,7 +130,7 @@ export function main() {
 
           tipo = produto.tipo;
 
-          preco = readlinesync.questionFloat("Digite o preco: ");
+          preco = readlinesync.questionFloat("Digite o preco R$: ");
 
           switch (tipo) {
             case 1:

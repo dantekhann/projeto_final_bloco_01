@@ -14,11 +14,11 @@ export class Chuteira extends Produto {
     this._chuteira = chuteira;
   }
 
-  public get generico(): string {
+  public get chuteira(): string {
     return this._chuteira;
   }
 
-  public set generico(value: string) {
+  public set chuteira(value: string) {
     this._chuteira = value;
   }
 
