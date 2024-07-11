@@ -153,7 +153,7 @@ function sobre(): void {
     console.log("\n*****************************************************");
     console.log("Projeto Desenvolvido por: ");
     console.log("Generation Brasil - generation@generation.org");
-    console.log("github.com/conteudoGeneration");
+    console.log("github.com/dantekhann/projeto_final_bloco_01");
     console.log("*****************************************************");
 }
 
